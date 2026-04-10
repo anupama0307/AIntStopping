@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="GuardAI multi-agent anti-piracy architecture">
+  <defs>
+    <style>
+      .title { font: 700 26px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; fill: #111827; }
+      .subtitle { font: 500 14px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; fill: #374151; }
+      .label { font: 600 14px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; fill: #111827; }
+      .text { font: 500 13px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; fill: #374151; }
+      .small { font: 500 12px -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; fill: #4b5563; }
+      .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 14; }
+      .box2 { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 2; rx: 14; }
+      .lane { fill: #f9fafb; stroke: #e5e7eb; stroke-width: 2; rx: 18; }
+      .arrow { stroke: #6b7280; stroke-width: 2.2; fill: none; marker-end: url(#arrowHead); }
+      .dash { stroke-dasharray: 6 6; }
+      .chip { fill: #eef2ff; stroke: #c7d2fe; stroke-width: 2; rx: 10; }
+    </style>
+    <marker id="arrowHead" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7280" />
+    </marker>
+  </defs>
+
+  <!-- Header -->
+  <text x="40" y="56" class="title">GuardAI: Real-time Sports Piracy Takedown (Multi-Agent)</text>
+  <text x="40" y="84" class="subtitle">Detect → Track → Verify → Takedown → Monitor → Learn (continuous loop)</text>
+
+  <!-- Lanes -->
+  <rect x="40" y="120" width="1120" height="150" class="lane" />
+  <rect x="40" y="290" width="1120" height="220" class="lane" />
+  <rect x="40" y="530" width="1120" height="160" class="lane" />
+
+  <text x="60" y="150" class="label">1) Ingestion</text>
+  <text x="60" y="320" class="label">2) Multi-agent Intelligence &amp; Decisioning</text>
+  <text x="60" y="560" class="label">3) Enforcement &amp; Feedback</text>
+
+  <!-- Ingestion boxes -->
+  <rect x="80" y="170" width="300" height="80" class="box" />
+  <text x="100" y="202" class="label">Sources</text>
+  <text x="100" y="225" class="text">Live streams • Social clips • IPTV</text>
+
+  <rect x="410" y="170" width="320" height="80" class="box" />
+  <text x="430" y="202" class="label">Capture / Crawlers</text>
+  <text x="430" y="225" class="text">Pull segments + metadata</text>
+
+  <rect x="760" y="170" width="360" height="80" class="box" />
+  <text x="780" y="202" class="label">Stream Router</text>
+  <text x="780" y="225" class="text">Queue + prioritize (real-time)</text>
+
+  <path d="M 380 210 L 410 210" class="arrow" />
+  <path d="M 730 210 L 760 210" class="arrow" />
+
+  <!-- Intelligence boxes -->
+  <rect x="80" y="355" width="320" height="130" class="box2" />
+  <text x="100" y="385" class="label">Detection Agents</text>
+  <rect x="100" y="398" width="280" height="28" class="chip" />
+  <text x="114" y="417" class="small">Vision agent (logo/scoreboard)</text>
+  <rect x="100" y="432" width="280" height="28" class="chip" />
+  <text x="114" y="451" class="small">Audio agent (commentary fingerprint)</text>
+  <rect x="100" y="466" width="280" height="28" class="chip" />
+  <text x="114" y="485" class="small">Watermark / overlay agent</text>
+
+  <rect x="430" y="355" width="340" height="130" class="box2" />
+  <text x="450" y="385" class="label">Tracking Agent</text>
+  <text x="450" y="410" class="text">Unifies duplicates, follows re-uploads</text>
+  <text x="450" y="433" class="text">Builds "incident" timeline + entities</text>
+  <text x="450" y="456" class="text">Ranks by reach, recency, confidence</text>
+
+  <rect x="800" y="355" width="320" height="130" class="box2" />
+  <text x="820" y="385" class="label">Policy &amp; Orchestrator</text>
+  <text x="820" y="410" class="text">Thresholds, escalation, human-in-loop</text>
+  <text x="820" y="433" class="text">Generates actions + audit trail</text>
+  <text x="820" y="456" class="text">Chooses channel-specific takedown</text>
+
+  <path d="M 940 250 L 940 355" class="arrow" />
+  <path d="M 580 250 L 580 355" class="arrow" />
+  <path d="M 230 250 L 230 355" class="arrow" />
+
+  <path d="M 400 420 L 430 420" class="arrow" />
+  <path d="M 770 420 L 800 420" class="arrow" />
+
+  <!-- Evidence + storage -->
+  <rect x="80" y="495" width="1040" height="24" class="box" />
+  <text x="100" y="512" class="small">Evidence Store: hashes, screenshots, timestamps, URLs, platform IDs, actions (tamper-evident logging)</text>
+
+  <path d="M 240 485 L 240 495" class="arrow" />
+  <path d="M 600 485 L 600 495" class="arrow" />
+  <path d="M 960 485 L 960 495" class="arrow" />
+
+  <!-- Enforcement -->
+  <rect x="80" y="595" width="380" height="70" class="box" />
+  <text x="100" y="625" class="label">Takedown Agent</text>
+  <text x="100" y="648" class="text">Notices + API requests + retries</text>
+
+  <rect x="490" y="595" width="300" height="70" class="box" />
+  <text x="510" y="625" class="label">Partner / Platform APIs</text>
+  <text x="510" y="648" class="text">YouTube, X, TikTok, CDNs, ISPs</text>
+
+  <rect x="820" y="595" width="300" height="70" class="box" />
+  <text x="840" y="625" class="label">Monitoring Dashboard</text>
+  <text x="840" y="648" class="text">SLAs, outcomes, alerts, review queue</text>
+
+  <path d="M 960 519 L 960 595" class="arrow" />
+  <path d="M 270 519 L 270 595" class="arrow" />
+  <path d="M 460 630 L 490 630" class="arrow" />
+
+  <!-- Feedback loop -->
+  <path d="M 970 665 C 970 695, 220 705, 220 485" class="arrow dash" />
+  <text x="420" y="700" class="small">Feedback: outcomes → model updates / policy tuning → improved precision &amp; speed</text>
+</svg>
